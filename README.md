@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+[<img width="134" src="https://vk.com/images/apps/mini_apps/vk_mini_apps_logo.svg">](https://vk.com/services)
 
-You can use the [editor on GitHub](https://github.com/AmiN4iK03/VKCASHAPP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Create VK Mini App [![npm][npm]][npm-url] [![deps][deps]][deps-url]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## How to install
 
-### Markdown
+### Create VK Mini App with gh-pages deploy
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+`npx @vkontakte/create-vk-mini-app <app-directory-name>`
 
-```markdown
-Syntax highlighted code block
+### Create VK Mini App with Zeit deploy
 
-# Header 1
-## Header 2
-### Header 3
+Firstly, you have to create Zeit account and connect it with your GitHub profile — https://zeit.co/
 
-- Bulleted
-- List
+`npx @vkontakte/create-vk-mini-app <app-directory-name> --zeit`
 
-1. Numbered
-2. List
+### Create VK Mini App with Surge deploy
 
-**Bold** and _Italic_ and `Code` text
+Firstly, you have to create Surge account and Surge-domain — https://surge.sh/
 
-[Link](url) and ![Image](src)
-```
+`npx @vkontakte/create-vk-mini-app <app-directory-name> --surge <surge-domain>`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## How to start work with app
 
-### Jekyll Themes
+Go to created folder and run:
+`yarn start` || `npm start` — this will start dev server with hot reload on `localhost:10888`.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AmiN4iK03/VKCASHAPP/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+`yarn run build` || `npm run build` — this will build production bundle, with tree-shaking, uglify and all this modern fancy stuff
 
-### Support or Contact
+[npm]: https://img.shields.io/npm/v/@vkontakte/create-vk-mini-app.svg
+[npm-url]: https://npmjs.com/package/@vkontakte/create-vk-mini-app
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+[deps]: https://img.shields.io/david/vkcom/create-vk-mini-app.svg
+[deps-url]: https://david-dm.org/vkcom/create-vk-mini-app
